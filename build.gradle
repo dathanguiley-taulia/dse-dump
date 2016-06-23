@@ -1,0 +1,30 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+  }
+}
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'application'
+apply plugin: 'idea'
+
+jar {
+  baseName = 'dseDump'
+  version = '0.0.1-SNAPSHOT'
+}
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile('com.datastax.cassandra:cassandra-driver-core:2.1.6')
+  compile 'org.codehaus.groovy:groovy-all:2.4.3'
+}
+
+mainClassName = "com.taulia.util.dsedump.Export"
