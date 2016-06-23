@@ -2,10 +2,6 @@ package com.taulia.util.dsedump
 
 import com.datastax.driver.core.*
 
-/**
- * Hello world!
- *
- */
 public class Export {
 
   public static void main(String[] args) {
