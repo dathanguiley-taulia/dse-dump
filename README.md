@@ -6,6 +6,8 @@ This is needed because many large data pulls will timeout in cassandra or solr.
 *This app is currently hardcoded to pull invoice ids by buyer_company_id.  
 However, the vision is to provide more filtering and output options.*
 
+*Counts are per 10000 invoice ids found.  If the app is walking through sparse data the counts will not be reported often.*
+
 ## Usage
 
 1. unzip the dist
