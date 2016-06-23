@@ -3,7 +3,8 @@ A utility app to read the contents of a table in DSE and write out filtered data
 
 This is needed because many large data pulls will timeout in cassandra or solr.
 
-* This app is currently hardcoded to pull invoice ids by buyer_company_id *
+*This app is currently hardcoded to pull invoice ids by buyer_company_id.  
+However, the vision is to provide more filtering and output options.*
 
 ## Usage
 
